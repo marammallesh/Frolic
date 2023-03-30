@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Frolic Automation"><!-- --> 
+	<!-- <parameter name="isBaseImage" value="false" /> <parameter name="expected"
+		value="0.15" /> -->
+	<listeners>
+		<listener class-name="live.frolic.util.TestListener"></listener>
+		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+	</listeners>
+
+	<test name="Frolic UAT">
+		<parameter name="deviceIndex" value="1" />
+		<parameter name="deviceIndex1" value="2" />
+
+		<classes>
+
+
+			<class name="live.frolic.test.login.FrolicCreateBattleTest" />
+			<!-- <class name="live.frolic.test.login.FrolicCreateBattleTest" />
+			<class name="live.frolic.test.chooseregion.FrolicChooseRegionTest">
+				<methods>
+					<exclude name="chooseRegion"></exclude>
+				</methods>
+			</class>
+
+			<class name="live.frolic.test.profile.FrolicProfileTest">
+				<methods>
+					<exclude name="editName"></exclude>
+				</methods>
+			</class>
+
+			<class name="live.frolic.test.liveMatches.LiveMatches" >
+				<methods>
+					<exclude name="verifyLiveMatchesText"></exclude>
+				</methods>
+			</class>
+
+			<class name="live.frolic.test.usersSearchTest.usersSearchTest" />
+
+			<class name="live.frolic.test.postsSearchTest.postsSearchTest" />
+
+			<class name="live.frolic.test.practicematchTest.practiceMatchTest" >
+				<methods>
+					<exclude name="verifyPracticeMatch">
+					</exclude>
+				</methods>
+			</class>
+
+			<class name="live.frolic.test.homepage.HomePage" />
+
+			<class name="live.frolic.test.wallet.FrolicWalletTest" >
+				<methods>
+					<exclude name="verifyPaymentByUpi"></exclude>
+				</methods>
+			</class>
+
+			<class name="live.frolic.test.helpdesk.FrolicHelpDeskTest" />
+
+			<class name="live.frolic.test.helpdesk.FrolicRaiseTicketTest" />
+
+			<class name="live.frolic.test.settings.FrolicSettingsTest" />
+
+			<class name="live.frolic.test.tournaments.FrolicTournamentsTest" />
+
+			<class name="live.frolic.test.playlater.FrolicChallengePlayLaterTest" />
+
+			<class name="live.frolic.test.achivement.FrolicAchievementRewardsTest" />
+
+            <class name="live.frolic.test.achivement.FrolicAchievementViewJourneyTest" />
+
+			<class name="live.frolic.test.achivement.FrolicAchievementBadgesTest" />
+
+		<class name="live.frolic.test.playnow.FrolicBattlePlayNowTest" />
+			<class name="live.frolic.test.refer.FrolicReferTest"/>
+
+			<class name="live.frolic.test.notifications.FrolicReferralNotificationsTest"/>
+			
+			<class name="live.frolic.test.notifications.FrolicSignUpNotificationsTest"/>-->
+
+		</classes>
+
+	</test>
+
+</suite>

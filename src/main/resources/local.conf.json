@@ -1,0 +1,22 @@
+{
+	"capabilities": {
+		"appActivity": "live.frolic.app.onboarding.activity.OnboardActivity",
+		"appPackage": "live.frolic.app.debug",
+		"autoGrantPermissions" : true
+	},
+	"environments": [
+		{
+			"deviceName": "Samsung",
+			"udid": "RZ8R90EA0HT",
+			"platformName": "Android",
+			"platformVersion": "12"
+		}
+	,{
+			"deviceName1": "Oppo",
+			"udid1": "8LRG6LSO5DV4RCSK",
+			"platformName1": "Android",
+			"platformVersion1": "11"
+		}
+	
+	]
+}

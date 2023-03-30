@@ -1,0 +1,23 @@
+{
+	"capabilities": {
+        "Package": "live.frolic.app",
+		"appActivity": "live.frolic.app.onboarding.activity.OnboardActivity"
+	},
+
+	"environments": [
+		
+		{
+			"deviceName": "vivo",
+			"udid": "1376185036000AL",
+			"platformName": "Android",
+			"platformVersion": "12"
+		},
+		{
+			"deviceName": "vivo",
+			"udid": "1376185036000AL",
+			"platformName": "Android",
+			"platformVersion": "12"
+		}
+		
+	]
+}

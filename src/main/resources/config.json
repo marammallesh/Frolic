@@ -1,0 +1,15 @@
+{
+	"_comment": "Use mobilelab - for using b2b testers mobile lab, local - using real devices, browserstack - using browserstack" ,
+	"server": "browserstackURL",
+	"urls": [
+		{
+			"browserstackURL": "https://hub.browserstack.com/wd/hub"
+		},
+		{
+			"localURL": "http://127.0.0.1:4723/wd/hub"
+		},
+		{
+			"mobilelabURL": "http://192.168.217.78:4723/wd/hub"
+	 }
+	]
+}

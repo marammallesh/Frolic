@@ -1,0 +1,58 @@
+image: maven:3.6.3-jdk-11
+  
+#before_script:
+
+    ################################################################################################
+    # Install Xvfb (X virtual framebuffer) packages.                                               #
+    # Xvfb (X virtual framebuffer) is an in-memory display server for a UNIX-like operating system # 
+    # It implements the X11 display server protocol without any display.                           #
+    ################################################################################################
+
+    
+    ##########################
+    # Install Java on system #
+    ##########################
+
+    
+    ##################################################
+    # Install Latest Google chrome package on system #
+    ##################################################
+
+    
+stages:
+  - Test
+  - Report
+
+Test:
+  stage: Test
+  script:
+    - apt-get update
+    - apt-get -y install gnupg
+    - apt-get install -y unzip xvfb libxi6 libgconf-2-4
+    - apt install -y default-jdk
+    - curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
+    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
+    - apt-get -y update
+    - apt-get -y install google-chrome-stable
+    - mvn clean install
+    - mvn allure:report
+  artifacts:
+    when: always
+    paths:
+      - target/site/allure-maven-plugin
+    expire_in: 1 week
+  only:
+    - main
+
+Report:
+  stage: Report
+  only:
+    - main
+  script:
+    - mkdir public
+    - mv target/site/allure-maven-plugin/* public
+  artifacts:
+    when: always
+    paths:
+      - public
+    expire_in: 1 week

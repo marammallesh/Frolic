@@ -1,0 +1,23 @@
+{
+	"capabilities": {
+		"appActivity": "live.frolic.app.onboarding.activity.OnboardActivity",
+		"appPackage": "live.frolic.app",
+		"autoGrantPermissions" : true
+	},
+	"environments": [
+		{
+			"deviceName": "Galaxy Note10 Lite",
+			"udid": "a74b3143",
+			"platformName": "Android",
+			"platformVersion": "11"
+		}
+	],
+	"environments1": [
+		{
+			"deviceName1": "REALME 5Pro",
+			"udid1": "RF8N11B418T",
+			"platformName1": "Android",
+			"platformVersion1": "11"
+		}
+	
+	]}

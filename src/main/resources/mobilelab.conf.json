@@ -1,0 +1,23 @@
+{
+	"capabilities": {
+		"Package": "live.frolic.app.debug",
+		"appActivity": "live.frolic.app.onboarding.activity.OnboardActivity"
+	},
+
+	"environments": [
+
+		{
+			"deviceName": "vivo",
+			"udid": "1376185036000AL",
+			"platformName": "Android",
+			"platformVersion": "12"
+		},
+		{
+			"deviceName1": "REALME 5Pro",
+			"udid1": "a74b3143",
+			"platformName1": "Android",
+			"platformVersion1": "11"
+		}
+
+	]
+}

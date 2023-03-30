@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Frolic Prod Automation"><!-- -->
+	<!-- <parameter name="isBaseImage" value="false" /> <parameter name="expected" 
+		value="0.15" /> -->
+	<listeners>
+		<listener class-name="frolic_prodtest.util.TestListener"></listener>
+		<listener
+			class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+	</listeners>
+
+	<test name="Frolic PROD">
+		<parameter name="deviceIndex" value="1" />
+
+		<classes>
+
+			<class name="frolic_prodtest.test.login.SignUpDeleteAccountTest">
+
+			</class>
+<!--			<class
+				name="frolic_prodtest.test.chooseregion.FrolicChooseRegionTest">
+				<methods>
+					<exclude name="chooseRegion"></exclude>
+				</methods>
+			</class>
+			<class name="frolic_prodtest.test.wallet.FrolicWalletTest" />
+			<class
+				name="frolic_prodtest.test.tournaments.FrolicTournamentsTest">
+				<methods>
+					<include name="VerifyTournamentViewTabs"></include>
+					<include name="VerifyTournamentShareResult"></include>
+				</methods>
+			</class>
+			<class
+				name="frolic_prodtest.test.playlater.FrolicChallengePlayLaterTest" />
+			<class name="frolic_prodtest.test.helpdesk.FrolicHelpDeskTest" />
+			<class name="frolic_prodtest.test.helpdesk.FrolicRaiseTicketTest" />
+			<class
+				name="frolic_prodtest.test.achivement.FrolicAchievementRewardsTest" />
+			<class
+				name="frolic_prodtest.test.achivement.FrolicAchievementViewJourneyTest" />
+			<class
+				name="frolic_prodtest.test.achivement.FrolicAchievementBadgesTest" />
+
+			<class name="frolic_prodtest.test.settings.FrolicSettingsTest" />
+			<class name="frolic_prodtest.test.liveMatches.LiveMatches" />
+			<class name="frolic_prodtest.test.playnow.FrolicBattlePlayNowTest" />
+
+-->
+		</classes>
+
+	</test>
+
+</suite> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
